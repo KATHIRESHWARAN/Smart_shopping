@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Recommendation System</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Product Recommendation System</h1>
+            <p>Discover similar products based on your preferences</p>
+        </header>
+        
+        <div class="search-section">
+            <input type="text" id="productInput" placeholder="Enter a product name...">
+            <button id="searchBtn">Get Recommendations</button>
+        </div>
+        
+        <div id="loading" class="loading hidden">
+            <div class="spinner"></div>
+            <p>Finding the best recommendations for you...</p>
+        </div>
+        
+        <div id="results" class="results hidden">
+            <div class="original-product">
+                <h3>You searched for:</h3>
+                <div class="product-card" id="originalProduct">
+                    <!-- Filled by JavaScript -->
+                </div>
+            </div>
+            
+            <div class="recommendations">
+                <h3>Recommended Products:</h3>
+                <div class="recommendation-grid" id="recommendationGrid">
+                    <!-- Filled by JavaScript -->
+                </div>
+            </div>
+        </div>
+        
+        <div id="error" class="error hidden">
+            <!-- Error messages appear here -->
+        </div>
+    </div>
+    
+    <script src="/static/script.js"></script>
+</body>
+</html>
